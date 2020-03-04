@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="/style/style.css" type="text/css">
   </head>
   <body>
-    Working!!!
+    <div class="jumbotron">
+      <h1>Open Library</h1>
+      <p>Please enter the ISBN of the book you'd like to retrieve</p>
+      <form action="#" onsubmit="getBookInfo();return false">
+        <div class="container">
+          <div class="row">
+            <label for="number" class="col-sm-2">ISBN</label><input type="text" name="number" id="isbnNumber" class="col-sm-4">
+            <button type="submit" id="search" class="btn btn-primary col-sm-6">Query</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="bookInfo">
+      
+    </div>
     <script type="text/javascript" src="js/functions.js"></script>
   </body>
 </html>
